@@ -1,6 +1,6 @@
 # Use
 
-*Note that by default, these configuration files open port `6379` on the host for Redis inspection, and `8080` for the service itself. You'll want to ensure no other services have these ports open (or change these configuration files).*
+*Note that by default, these configuration files open a port dynamically on the host for Redis inspection, and `8080` for the service itself. You'll want to ensure no other services have these ports open (or change these configuration files).*
 
 1. Build the Docker image: `docker build -t nomad-cache:v3 .` (the `cache.hcl` assumes this is the container name—**do not** use a `latest` tag, because Consul will always want to pull from a container registry)
 1. Start Redis: `nomad run config/redis.hcl`
