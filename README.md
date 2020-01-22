@@ -1,3 +1,10 @@
+# Install Dependencies
+
+1. Docker `brew cask install docker`
+1. Consul `brew install consul`
+1. Nomad `brew install nomad`
+1. [Optional] Terraform `brew install terraform`
+
 # Use
 
 *Note that by default, these configuration files open a port dynamically on the host for Redis inspection, and `8080` for the service itself. You'll want to ensure no other services have these ports open (or change these configuration files).*
